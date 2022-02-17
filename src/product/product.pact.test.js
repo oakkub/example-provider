@@ -17,8 +17,7 @@ describe("Pact Verification", () => {
       providerBaseUrl: "http://localhost:8080",
       providerVersion: process.env.GIT_COMMIT,
       providerVersionTags: process.env.GIT_BRANCH ? [process.env.GIT_BRANCH] : [],
-      verbose: process.env.VERBOSE === 'true',
-      // enablePending: true
+      verbose: process.env.VERBOSE === 'true'
     }
 
     // For builds triggered by a 'contract content changed' webhook,
